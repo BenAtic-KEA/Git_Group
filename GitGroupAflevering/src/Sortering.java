@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class Sortering {
 
+    private final String problemDescription = "Skriven metode, der indlæser 5 tekststrenge fra tastaturetog " +
+            "udskriver dem på skærmen i alfabetisk faldende orden på skærmen.";
+
 
    public static void sortWords(){
 
@@ -25,6 +28,11 @@ public class Sortering {
 
        }
 
+   }
+
+   public void printProblemDescription(){
+
+       System.out.println(problemDescription);
    }
 
 
