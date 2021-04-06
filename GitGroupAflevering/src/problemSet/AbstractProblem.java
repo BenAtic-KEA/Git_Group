@@ -1,4 +1,4 @@
 package problemSet;
 
-public class AbstractProblem {
+public abstract class AbstractProblem {
 }
