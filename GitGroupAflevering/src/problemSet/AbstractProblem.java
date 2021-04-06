@@ -1,4 +1,11 @@
 package problemSet;
 
-public class AbstractProblem {
+public abstract class AbstractProblem {
+    private String problemDescription;
+
+    public AbstractProblem(String problemDescription){
+        this.problemDescription = problemDescription;
+    }
+
+    public abstract void printProblemDescription();
 }
