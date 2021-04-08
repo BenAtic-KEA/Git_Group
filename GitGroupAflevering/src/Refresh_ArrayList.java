@@ -7,9 +7,9 @@ public class Refresh_ArrayList extends AbstractProblem{
         haystack.add("needle1");
 
         System.out.println("Gennemsøg \"haystack\" for strengen \"needle1\".");
-        System.out.println("Resultat: " + doesArrayListContainString(haystack, "needle1"));
+        System.out.println("Resultat: " + solution(haystack, "needle1"));
         System.out.println("Gennemsøg \"haystack\" for strengen \"needle2\".");
-        System.out.println("Resultat: " + doesArrayListContainString(haystack, "needle2"));
+        System.out.println("Resultat: " + solution(haystack, "needle2"));
 
         System.out.println(haystack);
     }
@@ -21,9 +21,9 @@ public class Refresh_ArrayList extends AbstractProblem{
             "•Hvis strengen findes i arraylisten returnerer metoden true og printer ”The String has been found\"";
 
 
-    }
 
-    public static boolean doesArrayListContainString(ArrayList<String> haystack, String needle) {
+
+    public static boolean solution(ArrayList<String> haystack, String needle) {
         if (haystack.contains(needle)) {
             System.out.println("The string has been found");
             return true;
@@ -36,7 +36,7 @@ public class Refresh_ArrayList extends AbstractProblem{
 
     @Override
     public void printProblemDescription() {
-       // return QUOI
+        System.out.println(problemDescription);
     }
 }
 
