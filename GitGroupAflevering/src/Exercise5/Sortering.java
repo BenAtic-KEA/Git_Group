@@ -1,6 +1,9 @@
+package Exercise5;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
+
 public class Sortering {
 
 
@@ -27,10 +30,6 @@ public class Sortering {
 
        }
 
-   }
-   public String getProblemDescription(){
-
-        return problemDescription;
    }
 
    public void printProblemDescription(){
