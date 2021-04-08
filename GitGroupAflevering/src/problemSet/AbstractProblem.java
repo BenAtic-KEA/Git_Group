@@ -8,4 +8,6 @@ public abstract class AbstractProblem {
     }
 
     public abstract void printProblemDescription();
+
+    public abstract void solution();
 }
