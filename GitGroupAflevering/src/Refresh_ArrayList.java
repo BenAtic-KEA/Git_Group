@@ -1,6 +1,7 @@
 import java.util.ArrayList;
+import problemSet.AbstractProblem;
 
-public class Refresh_ArrayList {
+public class Refresh_ArrayList extends AbstractProblem{
     public static void main(String[] args) {
         ArrayList<String> haystack = new ArrayList<>();
         haystack.add("needle1");
@@ -13,6 +14,15 @@ public class Refresh_ArrayList {
         System.out.println(haystack);
     }
 
+    private final String problemDescription = "Skriv en metode med navnet doesArraylistContainString, der modtager 2 parametre:\n" +
+            "en arrayliste og enstreng.\n" +
+            "Metoden returnerer en boolean:\n" +
+            "•Hvis strengen ikke findes i arraylisten indsættes strengen i listen og metoden returnerer false\n" +
+            "•Hvis strengen findes i arraylisten returnerer metoden true og printer ”The String has been found\"";
+
+
+    }
+
     public static boolean doesArrayListContainString(ArrayList<String> haystack, String needle) {
         if (haystack.contains(needle)) {
             System.out.println("The string has been found");
@@ -22,6 +32,11 @@ public class Refresh_ArrayList {
             haystack.add(needle);
             return false;
         }
+    }
+
+    @Override
+    public void printProblemDescription() {
+       // return QUOI
     }
 }
 
