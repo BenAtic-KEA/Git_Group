@@ -14,15 +14,25 @@ public class CuttingGrass{
             Benyt en Scanner til at få input fra brugeren, og udskriv resultatet på skærmen.""";
 
     private final double GROWTH = 0.8d;
-    private final Scanner sc = new Scanner(System.in);
+    private static final Scanner sc = new Scanner(System.in);
 
     // Computes the days left until minlength has been reached and outputs it, rounded down by typecasting to Integer.
     public int daysLeft (double currentLength, double maxLength ){
         return (int) ((maxLength-currentLength)/GROWTH);
     }
 
-    public static void main(String[] args) {
+    public static void solution() {
+        System.out.println("Input current grass length: ");
+        double current = sc.nextDouble();
+        sc.nextLine();
+        System.out.println("Input max grass length: ");
+        double max = sc.nextDouble();
+        sc.nextLine();
         CuttingGrass cg = new CuttingGrass();
-        System.out.println(cg.daysLeft(1.9, 11.2));
+        System.out.println(cg.daysLeft(current, max));
+    }
+
+    public static void main(String[] args) {
+        solution();
     }
 }
